@@ -1,0 +1,1030 @@
+@font-face {
+  font-family: "Flood";
+  src: url("../assets/fonts/Flood.ttf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Rambla&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:  Helvetica, sans-serif;
+  margin:0
+}
+  .container {
+    /* display: grid; */
+    height: auto;
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: white;
+    width: 100%;
+    height: 12rem;
+    align-items: center;
+    justify-content: center;
+  }
+  .green-initiative {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-self:center;
+  }
+
+  .green-initiative h4 {
+    
+    margin-left: 20%;
+    color: #354463;
+    font-size: 1.2em;
+  }
+  .navbar-nav {
+    width: 50%;
+  }
+  .navbar-nav > div {
+    list-style: none;
+    padding: 0.4em;
+    font-size: 0.8em;
+    margin-left: 6em;
+    font-size: .8em;
+    
+  }
+  .tag-climate-change{
+    grid-area: 1/2/2/3;
+    font-family: flood;
+    line-height: 1em;
+    color:white;
+    font-size:3em;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin-top: .5em
+  }
+  .li-abt,.li-sty,.li-news{
+    display: none;
+  }
+
+  .navbar-nav a {
+    text-decoration: none;
+    color: #354463;
+  }
+  .btn {
+    background-color: #c1f7d5;
+    color: #354463;
+    width: 22em;
+    height: 2.5em;
+    font-weight: bold;
+    border-radius: 2em;
+    border: none;
+    text-align: center;
+    font-size: 1.1em;
+    /* font-size: 1em */
+    justify-self: center
+  }
+  header .btn a{
+    color: #354463;
+    position: relative;
+    text-decoration: none !important;
+    top:20%
+  
+    
+    
+    
+  }
+
+  .stop-climate-change {
+    display: grid;
+    background-color: black;
+    background-image: url(../annie-spratt-135307-unsplash.jpg);
+    background-position: 41% 78%;
+    background-size: 318% auto;
+    width: 100%;
+    height: 40em;
+    grid-template-rows: 57% 35% 5%;
+    grid-template-columns: 10% 80% 10%;
+  }
+  /* .stop-climate-change img{
+    height:100vh;
+    width:100vw;
+    object-fit: none;
+    object-position:right center
+    } */
+  .issue-content {
+    display: flexbox;
+    flex-direction: column;
+    position: relative;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #ffffff;
+  }
+   .top-card {
+    display: flex;
+    position: absolute;
+    background-color: #354463;
+    width: 40%;
+    height: 15%;
+    text-align: center;
+    top: -7%;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    left:48%;
+    transform: translate(-45%, 0);
+  
+  }
+    
+  
+  .issue-content .content {
+    position: absolute;
+    top: 24%;
+    margin: 0 5%;
+    color: #354463;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  .issue-content .read-more {
+    position: absolute;
+    bottom: 20%;
+    margin: 0 17%;
+    color: #354463;
+    width:auto;
+    text-align: center;
+    
+  }
+  .issue-content .read-more p {
+    line-height: 1.8em;
+    font-size: 65%;
+    justify-self: center
+  }
+  .take-action-content {
+    display: grid;
+    background-color: #c1f7d5;
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 5% 35% 20% 35% 5%;
+    padding: 1.5em 0 4em 0;
+    height: 10em;
+    position: relative;
+  }
+  .take-action-content p {
+    font-size: 0.8em;
+  }
+ 
+  .learn {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #354463;
+  }
+  .volunteer {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #354463;
+  }
+  .share {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: #354463;
+  }
+  .donate {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    color: #354463;
+  }
+  .what-we-do-content {
+    background-color: #354463;
+    display: grid;
+    grid-template-rows: 1.5% 1% 1.5% 7% 13.5% 3% 13.5% 3% 13.5% 2% 37.5% 3%;
+    grid-template-columns: 10% 80% 10%;
+    height: 200em;
+    width: auto;
+    text-align: center;
+  }
+  .what-we-do {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    background-color: #ffffff;
+    color: #354463;
+    height: 2.5em;
+    width: 11em;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+  }
+  .what-we-do-para {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.2em;
+    font-weight: bolder;
+    line-height: 1.4em;
+  }
+  .box-card {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    display: grid;
+    position: relative;
+    background-color: #ffffff;
+    grid-template-rows: 30% 5% 10% 2% 30% 15%;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    justify-items: center;
+  }
+  .last{
+      grid-area: 12/1/13/4;
+      background-color: #ffffff;
+  }
+  .card {
+    position: absolute;
+    background-image: url(../assets/home/tree-planting.png);
+    background-size: cover;
+    background-position: 40% 60%;
+    width: 75%;
+    height: 45%;
+    left: 12.5%;
+    top: -10%;
+  }
+
+  .box-card p {
+    margin-left: 25%;
+    color: #354463;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    grid-area: 5/2/6/3;
+    margin: 0px;
+  }
+  .box-card h3 {
+    grid-area: 3/2/4/3;
+    margin-top: 2.7em;
+    font-size: em;
+    text-align: center;
+    color: #354463;
+  }
+  .box-card .btn {
+    grid-area: 6/2/7/3;
+    margin-top: 0.7em;
+    font-size: 1em;
+    width: 10em;
+  }
+
+  .box-card.box-card-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 8;
+  }
+  .card.card-2 {
+    background-image: url(../assets/home//education-training.png);
+  }
+
+  .box-card.box-card-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 10;
+  }
+  .card.card-3 {
+    background-image: url(../assets/home/advocacy.png);
+  }
+  .climate-change-hunger {
+    height: 80em;
+    grid-area: 11/1/12/4;
+    background-image: url(../did-you-know-background.jpg);
+    /* background-size: 50% 50%; */
+    background-size: auto 120%;
+    background-repeat: no-repeat;
+    background-position: 47% 132%;
+    display: grid;
+    text-align:left;
+    grid-template-columns: 10% 60% 20% 10%;
+    grid-template-rows: 2% 18% 15% 11% 2% 11% 2% 11% 2% 11% 2% 11% ;
+  }
+  .climate-hunger {
+    font-family: Flood;
+    grid-area: 2/2/3/3;
+    text-align: left;
+    font-size: 3em;
+    line-height: 1em;
+    color: #ffffff;
+    margin-top: 0.5em;
+    margin-bottom: 0;
+  }
+  .climate-change-hunger .btn {
+    grid-area: 3/2/4/3;
+    width: 10em;
+    margin-top: 3em;
+    font-weight: bolder;
+  }
+  .cont-card {
+    grid-area: 4/2/5/4;
+    background-color: #ffffff;
+    position: relative;
+    display: grid;
+    /* align-items: center;
+    justify-items: center; */
+    grid-template-columns: 7% 73% 10% 10%;
+    grid-template-rows: 50% 35% 15%;
+  }
+  .cont-card .top-card {
+    position: absolute;
+    top: -12.5%;
+    z-index: 1;
+    width: 10em;
+    height: 2.5em;
+  }
+
+  .cont-card h3 {
+      color: #354463;
+      grid-area: 1/2/2/3;
+      z-index: 1;
+      margin-top: 2em;
+      font-size: 1.2em
+      /* margin-left:0; */
+      /* word-spacing: .2em; */
+  }
+  .cont-card-p{
+    grid-area: 2/2/3/3;
+    color: #354463;
+    margin: 0;
+    z-index: 1;
+    font-size:.7em;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.7em;
+  }
+  .cont-card.card-2{
+    grid-area: 6/2/7/4;
+  }
+  .cont-card.card-3{
+    grid-area: 8/2/9/4;
+  }
+  .cont-card.card-4{
+    grid-area: 10/2/11/4;
+  }
+  .stories-content{
+      display: grid;
+      grid-template-columns: 10% 80% 10%;
+      grid-template-rows: 40% 2% 40% 20%;
+      height:60em;
+      position: relative;
+      /* align-items: center; */
+    /* justify-items: center; */
+      
+  }
+
+  .stories-content .img-card{
+    grid-area: 1/2/2/3;
+    background-image: url(../assets/home/lady-baby.png);
+    background-size: auto 100%;
+    background-position: 70% 50%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  .stories-content .img-card .top-card{
+    height:12%;
+    top:-5%;
+    }
+
+   .img-card.img-card-2{
+    grid-area: 3/2/4/3;
+    background-image: none;
+    background-color: #354463;
+    background-size: auto 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows:70% 30%;
+    align-items: center;
+  
+  }
+  .iam-a-person{
+    grid-area: 1/2/2/3;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center
+  }
+  .balki-farmer{
+    grid-area: 2/2/3/3;
+    color:white;
+    font-size: .8em
+  }
+
+  .stories-content .btn{
+    grid-area: 4/2/5/3;
+    width: 10em;
+    /* position: absolute; */
+    top:20%;
+    left:25%;
+    align-self: center;
+  }
+  .to-save-future{
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-columns:10% 80% 10%;
+    height: 120em;
+    background-color: #354463;
+    align-items: center;
+    justify-items: center;
+    text-align: center
+  }
+  .to-save-future h2{
+    grid-area: 1/2/2/3;
+    font-family: flood;
+    line-height: 1em;
+    font-size: 3.3em ;
+    color:white;;
+    font-weight: 500
+
+  }
+  .to-save-future .image-card{
+    grid-area: 2/2/3/3;
+    background-image: url(../assets/home/tree-planting.png);
+    background-size: auto 100%;
+    background-position: 100% 70%;
+    /* border-style:dotted; */
+    height:100%;
+    width:100%; 
+    position: relative;
+    justify-items: center
+  }
+  .to-save-future .image-card .top-card{
+    background-color: #ffffff;
+    color: #354463;
+    height:2em;
+    width:9em;
+    top:-4%;
+  
+    
+  }
+  .earth-day{
+    grid-area: 3/2/4/3;
+    display: grid;
+    grid-template-rows: 30% 45% 25%;
+    grid-template-columns:100%;
+    position: relative;
+    height: 100%
+    
+  }
+  .earth-day h4{
+    grid-area: 1/1/2/2;
+    align-self: center;
+    justify-self: center;
+    font-size: 1.5em;
+    color:white;
+  }
+  .earth-day p{
+    grid-area:2/1/3/2;
+    color: #ffffff;
+    justify-self: center;
+    line-height: 1.9em;
+    font-weight: lighter
+  }
+  .earth-day .btn{
+    /* align-self: center; */
+    justify-self: center;
+    align-self: center;
+    width:9em
+  }
+  .to-save-future .img-card.img-card-2{
+    grid-area:4/2/5/3;
+    position: relative;
+    background-image: url(../assets/home/tree-planting.png);
+    background-size: auto 100%;
+    background-position: 100% 70%;
+    height:100%;
+    width:100%;
+    align-items: center
+  }
+  .to-save-future .img-card.img-card-2 .top-card.top-card-2{
+    background-color: #ffffff;
+    color: #354463; 
+    height:2em;
+    width:9em;
+    top:-4%;
+    /* left:30%    */
+  }
+  .earth-day.earth-day-2{
+    grid-area:5/2/6/3;
+  }
+  .subscribe-content{
+    height: 15em;
+    background-color: #C1F7D5;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 70% 40%;
+    /* align-items:center; */
+    
+  }
+  .subscribe-content h2{
+    grid-area: 1/2/2/3;
+    color: #354463;
+    font-size:1.5em;
+    align-self: center;
+    justify-self: center;
+  }
+  .subscribe-content form{
+    grid-area: 2/2/3/3;
+    /* align-self: center; */
+    /* justify-self: center */
+  }
+  .subscribe-content .btn{
+    background-color: #354463;
+    color:#C1F7D5;;
+    width:7em;
+    height:2.2em
+  }
+  .subscribe-content input[type="text"] {
+    width: 16em;
+    height:3em;
+    border-radius: 9em;
+    border:none;
+    text-indent: 1.5em;    
+}
+
+  footer{
+    height:20em;
+    display: grid;
+    grid-template-rows: 15% 15% 30%;
+    grid-template-columns: 10% 25% 55% 10%;
+  }
+  .green-initiative.footer-part{
+    grid-area:1/1/2/3;
+  }
+  .climate-change-tag{
+    grid-area:3/3/4/4;
+    font-family: flood;
+  }
+
+
+
+
+
+
+@media (min-width:501px) and (max-width:810px) {
+  .container{
+    position: relative;
+  }
+  header{
+    
+    display:grid;
+    grid-template-columns: 16.6% 16.6% 26.6% 10% 30%;
+    grid-template-rows: 50% 50%;
+    
+  }
+  .green-initiative{
+    margin-top:4em;
+  }
+  .green-initiative h4{
+    grid-area: 1/1/2/3;
+    font-size: auto;
+    width: 10em;
+    
+  }
+  header .btn{
+    grid-area: 1/5/3/6;
+    width: 70%;
+  }
+  .navbar-nav{
+    display: none;
+  }
+  .li-abt{
+    grid-area:2/1/3/2;
+    justify-self: center;
+    display: inline;
+  }
+  .li-sty{
+    grid-area:2/2/3/3;
+    justify-self: center;
+    display: inline;
+
+  }
+  .li-news{
+    grid-area:2/3/3/4;
+    justify-self: center;
+    text-decoration-color: none;
+    display: inline;
+  }
+  .stop-climate-change{
+    background-image: url(../assets/home/annie-spratt-135307-unsplash@2x.png);
+    background-size: 270% auto;
+    background-position:80% 100%;
+    height:40em;
+    background-repeat: no-repeat;
+  }
+  .issue-content .top-card{
+    height: 20%;
+    width:25%;
+    left:20%;
+    top:-10%
+  }
+  .li-abt >a , .li-sty>a ,.li-news>a{
+    text-decoration:none; ;
+    color: #354463
+  }
+  .issue-content .read-more{
+    margin-left:5%;
+    bottom:15%;
+  }
+  .issue-content .content{
+    text-align: left;
+    font-size:1.5em;
+  }
+  .issue-content .read-more p{
+    font-size: .9em;
+    text-align: left
+  }
+  .take-action-content{
+    height: 15em;
+  }
+  .take-action-content p {
+    font-size: 1em;
+    margin-top: 5%;
+  }
+  .take-action-content h3 {
+    font-size: 1.4em;
+  }
+  .what-we-do{
+    justify-self: left
+  }
+  .what-we-do-para {
+    text-align: left;
+    font-size: 1.6em;
+  }
+  .what-we-do-content{
+    height:150em
+  }
+  .what-we-do-content .box-card {
+    
+    display: grid;
+    position: relative;
+    background-color: #ffffff;
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 10% 40% 10% 30% 10%;
+    align-items: center;
+    justify-items: center;
+    
+  }
+  .what-we-do-content .card{
+    left: 5%;
+    width: 50%;
+    height:70%
+  }
+  .box-card .btn{
+    grid-area:2/2/3/3;
+    justify-self: right;
+    position: absolute;
+    right:-10%;
+    top:45%
+  }
+  .box-card h3{
+    grid-area:1/4/2/5;
+    justify-self: center;;
+    text-align: left;
+    font-size: 1.5em
+  }
+  .box-card p{
+    grid-area: 2/4/3/5;
+    text-align: left;
+    position: absolute;
+    top:15%;
+    font-size:.9em;
+    line-height:1.1em;
+    }
+    .climate-change-hunger{
+      display: grid;
+      grid-template-rows: 10% 15% 15% 15% 15% 10%;
+      grid-template-columns:10% 40% 45% 10%;
+      background-image: url(../assets/home/did-you-know-background@2x.png);
+      background-size: 160% auto;
+      background-position: 0% 0%
+    }
+    .climate-hunger{
+      grid-area:2/2/3/3;
+      font-size: 2.4em;
+    }
+    .cont-card .top-card{
+      left:30%
+    }
+    .climate-change-hunger .cont-card{
+      grid-area:2/3/3/4;
+      height:80%;
+    }
+    .climate-change-hunger .cont-card.card-2{
+      grid-area:3/3/4/4;
+    }
+    .climate-change-hunger .cont-card.card-3{
+      grid-area:4/3/5/4;
+    }
+    .climate-change-hunger .cont-card.card-4{
+      grid-area:5/3/6/4;
+    }
+    .climate-change-hunger .btn{
+      grid-area: 3/2/4/3;
+      
+      justify-self: left;
+      margin-top: 0;
+    }
+  .last{
+    display: none;
+  }
+  .stories-content{
+    grid-template-rows:10% 70% 20%;
+  }
+  .stories-content .img-card{
+    grid-area: 2/2/3/3;
+    position: absolute;
+    top:20%;
+    height:60%;width:90%
+  }
+  .img-card.img-card-2{
+    top: 70%;
+    right:5%;
+    height:30%;
+    width:75%;
+    align-items: none;
+  }
+  .img-card.img-card-2 .iam-a-person{
+    font-size:1em;
+    text-align: left;
+    /* align-self: center */
+    }
+  .img-card.img-card-2 .balki-farmer{
+    font-size:.7em;
+    text-align: left;
+
+  }
+  .stories-content .btn{
+    grid-area: 3/2/4/3;
+    justify-self: left;
+  }
+  .to-save-future{
+    grid-template-rows:15% 40% 40%;
+    grid-template-columns:6% 40% 40% 10%;
+    height:70em;
+    align-items: none;
+    position:relative;
+
+  }
+  .to-save-future h2{
+    grid-area:1/2/2/4;
+    text-align:left;
+    font-size:3em;
+  }
+  .to-save-future .image-card{
+    grid-area:2/2/3/3;
+    background-image: url(../assets/home/tree-planting.png);
+    background-size: cover;
+    background-position: 100% 70%;
+    /* border-style:dotted; */
+    height:50%;
+    width:100%; 
+    position: absolute;
+    top:5%;
+    justify-items: center;
+    }
+    .to-save-future .image-card .top-card{
+      top:0;
+      left:150%;
+      grid-area:1/4/3/5;
+      
+    }
+    .earth-day{
+      grid-area:2/3/3/4;
+      left:20%;
+      top:15%;
+      text-align:left;
+      
+    }
+    .earth-day p{
+      line-height: 1em;
+    }
+    .earth-day .btn{
+      position: absolute;
+      top:70%;
+      justify-self: left;
+    }
+
+.to-save-future .img-card.img-card-2{
+  grid-area:3/3/4/4;
+  left:20%;
+  height:50%;
+  width:100%; 
+  top:-15%;
+  background-size: cover;
+}
+.to-save-future .img-card.img-card-2 .top-card.top-card-2{
+  top:0;
+  left:-100%;
+  
+}
+.earth-day.earth-day-2{
+      grid-area:3/2/4/3;
+      left:0;
+      top:15%;
+      text-align:left;
+}
+.subscribe-content{
+  grid-template-rows: 50% 50%;
+  grid-template-columns:10% 60% 20% 10%;
+}
+.subscribe-content form{
+  grid-area: 2/2/3/4;
+  
+}
+.subscribe-content form input[type="text"]{
+  width:60%
+}
+.subscribe-content .btn{
+  width:30%;
+  
+}
+
+}
+@media only screen and (min-width:811px) {
+  header{
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 15% 15% 15% 15%;
+    height:8rem;
+    position: relative;
+  }
+  .green-initiative{
+    display: block;
+    grid-area:1/1/2/2;
+    width: 100%
+    
+  }
+  .green-initiative h4{
+    margin:0;
+  }
+
+  .navbar-nav{
+    display: none;
+  }
+  .li-abt{
+    grid-area:1/2/2/3;
+  }
+  .li-sty{
+    
+    grid-area:1/3/2/4;
+  }
+  .li-news{
+    
+    grid-area:1/4/2/5;
+  }
+  .li-abt,.li-sty,.li-news{
+    display:inline;
+    text-decoration: none;
+  }
+  .li-abt a,.li-sty > a, .li-news a{
+    text-decoration: none;
+    color:#354463;
+  }
+  header .btn{
+    grid-area:1/5/2/6;
+    width:8em;
+    position: absolute;
+    left:25%
+  }
+  .stop-climate-change{
+    grid-template-columns: 10% 35% 10% 35% 10%;
+    grid-template-rows: 20% 60% 20%;
+    background-image: url(../assets/home/annie-spratt-135307-unsplash@3x.png);
+    background-size: auto 100%;
+    background-position:70% 70%
+    
+  }
+  .stop-climate-change .tag-climate-change{
+    grid-area:2/4/3/5;
+    justify-items: center;
+    display: block;
+    margin: 0;
+    font-size: 4em;
+    width: 100%;
+  }
+  .issue-content .top-card{
+    left:30%
+  }
+  .issue-content .content{
+    font-size:2.7em;
+    top:10%;
+    text-align: left;
+  }
+  .issue-content .read-more{
+    margin:0;
+    width:100%
+  }
+  .issue-content .read-more p{
+    font-size: .9em;
+    text-align: center;    
+  }
+  .take-action-content{
+    grid-template-rows: 100%;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding:1.5em 0;
+    
+  }
+  .learn{
+    grid-area: 1/1/2/2;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+    
+  }
+ 
+  .volunteer{
+    grid-area: 1/2/2/3;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+  .share{
+    grid-area: 1/3/2/4;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+  .donate{
+    grid-area: 1/4/2/5;
+    width: 90%;
+    align-self: center;
+    justify-self: center;
+  }
+  .learn h3,.volunteer h3,.share h3,.donate h3{
+    font-size:2em
+  }
+  .learn p,.volunteer p,.share p,.donate p{
+    font-size:1em
+  }
+  .what-we-do-content{
+    grid-template-rows: 15% 15% 70%;
+    grid-template-columns: 10% 26.6% 26.6% 26.6% 10%;
+    height:60em;
+  }
+  .what-we-do-content .what-we-do{
+    grid-area:1/2/2/3;
+    align-self: end;
+    justify-self: left
+  }
+  .what-we-do-content .what-we-do-para{
+    grid-area: 2/2/3/5;
+    font-size:2.2em;
+    text-align: left;
+    align-self: center
+    
+  }
+  .what-we-do-content .box-card{
+    grid-area:3/2/4/3;
+    height:70%;
+    align-self: center;
+    width:85%
+  }
+  .what-we-do-content .box-card .card{
+    left:10%;
+    width:100%
+  }
+  .what-we-do-content .box-card h3{
+    font-size:1.4em;
+    text-align: left
+  }
+  .what-we-do-content .box-card p{
+    font-size:1em;
+    line-height: 
+    text-align: left;
+    align-self: end;
+  }
+  .what-we-do-content .box-card .btn{
+    justify-self: left;
+    
+  }
+
+  .what-we-do-content .box-card.box-card-2{
+    grid-area:3/3/4/4;
+    height:70%;
+    align-self: center
+  }
+  .what-we-do-content .box-card.box-card-3{
+    grid-area:3/4/4/5;
+    height:70%;
+    align-self: center
+  }
+}

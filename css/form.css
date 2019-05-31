@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "Flood";
+    src: url("../assets/fonts/Flood.ttf");
+  }
+  
+  @import url("https://fonts.googleapis.com/css?family=Rambla&display=swap");
+  * {
+    margin: 0;
+    padding: 0;
+  }
+.container{
+    height:auto;
+    width:100%
+}
+header h4{
+
+    text-align:center;
+    margin:1.2em 0;
+}
+p{
+    text-align: center;
+    font-family:flood;
+    line-height:1em;
+}
+.give-hope{
+    display: grid;
+    grid-template-rows:20% 70% 10%;
+    grid-template-columns:10% 80% 10%;
+    height: 20em;
+}
+
+.give-hope form{
+    grid-area:2/2/3/3;
+    background-color: #354463;
+    padding: 5%;
+}
+ input[type="text"],select{
+height:1em;
+width: 40%;
+display: inline-block;
+border-bottom: 5px #C1F7D5;
+
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
