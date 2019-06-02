@@ -275,7 +275,7 @@ body {
   }
   .box-card h3 {
     grid-area: 3/2/4/3;
-    margin-top: 2.7em;
+    margin-top: 6.7em;
     font-size: em;
     text-align: center;
     color: #354463;
@@ -530,7 +530,6 @@ body {
     font-weight: lighter
   }
   .earth-day .btn{
-    /* align-self: center; */
     justify-self: center;
     align-self: center;
     width:9em;
@@ -581,45 +580,92 @@ body {
   .subscribe-content .btn{
     background-color: #354463;
     color:#C1F7D5;;
-    width:1fr;
+    width:30%;
     height:2.2em
   }
   .subscribe-content input[type="text"] {
-    width: 2fr;
+    width: 60%;
     height:3em;
     border-radius: 9em;
     border:none;
     text-indent: 1.5em;    
 }
 
-  .contact-social{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  
+
+  footer{
+    height:30em;
+    position: relative;
   }
-  .green-initiative.footer-part{
-    grid-area:1/1/2/2;
-    padding-top:20%
+  .green-initiative-footer-part{
+    
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top:10%;
+    left:15%;
+    width:5%;
+    font-size:1.2em;
+    font-weight: bold;
+
   }
-  .contact{
-    grid-area:1/2/2/3;
-    padding-top:20%;
-    width: 50%;
-    display: flex;
-    flex-flow: column;
+  .contact-us{
+    position: absolute;
+    top:10%;
+    right:15%;
+    width:30%;
+    font-size:80%;
   }
-  .follow{
-    grid-area:2/1/3/2;
-    padding-top:20%;
-    width:50%;
-    display: flex;
-    flex-flow: column;
+  .follow-us a{
+    color: #354463;
   }
+  .follow-us{
+    
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top:35%;
+    left:10%;
+    width:30%;
+    font-size:100%;
+    text-align: center;
+    line-height: 1.2em;
+
+  }
+  .learn-more{
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    top:35%;
+    right:15%;
+    width: 30%;
+  }
+  .learn-more a{
+    color: #354463
+  }
+
   .climate-change-tag{
-    grid-area:3/3/4/4;
+    align-self: center;
+    justify-self: center;
+    position: absolute;
+    bottom:15%;
+    right:10%;
+    width:50%;
+    text-align: right;
     font-family: flood;
+    line-height: 1em;
+    font-size: 2em;
   }
 
-
+  footer .contact-us hr{
+    display: none;
+  }
+  footer .follow-us hr{
+    display:none;
+  }
+  footer .learn-more hr{
+    display:none;
+  }
 
 
 
@@ -719,7 +765,7 @@ body {
     font-size: 1.6em;
   }
   .what-we-do-content{
-    height:150em
+    /* height:150em */
   }
   .what-we-do-content .box-card {
     
@@ -742,20 +788,24 @@ body {
     justify-self: right;
     position: absolute;
     right:-10%;
-    top:45%
+    top:45%;
   }
   .box-card h3{
     grid-area:1/4/2/5;
-    justify-self: center;;
+    justify-self: center;
+    position: relative;
+    top:10%;
     text-align: left;
-    font-size: 1.5em
+    font-size: 1.5em;
+    margin-bottom:80%;
+    margin-top:4.7em;
   }
   .box-card p{
     grid-area: 2/4/3/5;
     text-align: left;
     position: absolute;
-    top:15%;
-    font-size:.9em;
+    bottom: 32%;
+    font-size:1em;
     line-height:1.1em;
     }
     .climate-change-hunger{
@@ -926,6 +976,67 @@ body {
   width:30%;
   
 }
+footer{
+  height:20em;
+
+}
+.green-initiative-footer-part{
+    
+  
+  top:10%;
+  left:5%;
+  width:25%;
+  font-size:120%;
+  font-weight: bold;
+
+}
+.contact-us{
+  position: absolute;
+  top:10%;
+  left:37%;
+  width:25%;
+  font-size:80%;
+}
+
+.follow-us{
+  
+ 
+  top:10%;
+  right:5%;
+  left:unset;
+  width:30%;
+  font-size:100%;
+  
+
+}
+.learn-more{
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  top:52%;
+  right:32%;
+  width: 30%;
+}
+
+
+.climate-change-tag{
+  bottom:20%;
+  right:10%;
+  width:25%;
+  text-align: right;
+  font-family: flood;
+  line-height: 1em;
+  font-size: 2em;
+}
+footer .contact-us hr{
+  display: none;
+}
+footer .follow-us hr{
+  display:none;
+}
+footer .learn-more hr{
+  display:none;
+}
 
 }
 @media only screen and (min-width:811px) {
@@ -984,8 +1095,8 @@ body {
     grid-template-columns: 10% 35% 10% 35% 10%;
     grid-template-rows: 20% 60% 20%;
     background-image: url(../assets/home/annie-spratt-135307-unsplash@3x.png);
-    background-size: auto 100%;
-    background-position:70% 70%
+    background-size: cover;
+    background-position:100% 70%
     
   }
   .stop-climate-change .tag-climate-change{
@@ -1079,16 +1190,24 @@ body {
   }
   .what-we-do-content .box-card h3{
     font-size:120%;
-    text-align: left
+    text-align: left;
+    /* margin-left:1.9em; */
+    margin:20%;
+
   }
   .what-we-do-content .box-card p{
-    font-size:80%;
+    font-size:110%;
     line-height: 1.3em;
     text-align: left;
-    align-self: end;
+    
+    padding: 0 1em 4em 0;
+    left:10%;
+    margin-left:10%;
+
   }
   .what-we-do-content .box-card .btn{
     justify-self: left;
+    margin:10%
     
   }
 
@@ -1150,7 +1269,7 @@ body {
      height: 50em;
     width: 100%;
     grid-template-columns:7% 35% 50% 7%;
-    grid-template-rows: 15% 70% 15%;
+    grid-template-rows: 5% 90% 5%;
 
   }
   .stories-content .img-card{
@@ -1181,7 +1300,150 @@ body {
     margin-bottom:15%;
   }
   .to-save-future{
-    grid-template-rows: 20% 40% 40%;
-    grid-template-columns: 
+    grid-template-rows: 15% 40% 40%;
+    grid-template-columns:10% 40% 40% 10%;
+    height: 70em;
+    align-items: unset;
+
   }
+  .to-save-future .image-card{
+    grid-area:2/2/3/3;
+    background-image: url(../assets/home/tree-planting.png);
+    height:90%;
+    width:90%; 
+    left:10%;
+    background-size: cover;
+    /* top:10% */
+    }
+    .to-save-future .image-card .top-card{
+      left:112%;
+      transform: unset;
+    }
+    .to-save-future .img-card.img-card-2 .top-card{
+      left:-90%;
+      right:unset;
+      transform: unset;
+    }
+.to-save-future h2{
+  grid-area:1/2/2/4;
+  text-align:left;
+  font-size:400%;
+}
+
+.to-save-future .earth-day{
+  grid-area:2/3/3/4;
+  height:70%;
+  width:70%; 
+  top:10%
+  /* right:0; */
+}
+.to-save-future .img-card.img-card-2{
+  grid-area:3/3/4/4;
+  height:90%;
+  width:90%; 
+  right:10%;
+  background-size: cover;
+}
+.to-save-future .earth-day.earth-day-2{
+  grid-area: 3/2/4/3;
+  height:70%;
+  width:70%; 
+}
+.to-save-future .earth-day h4,.to-save-future .earth-day p {
+  text-align: left;
+  line-height: 1.5em;
+  justify-self: unset;
+}
+
+.earth-day .btn{
+  position: absolute;
+  left:0;
+  top:100%;
+} 
+.subscribe-content{
+  grid-template-rows:unset;
+  grid-template-columns: 50% 50%; 
+}
+.subscribe-content h2{
+  grid-area: 1/1/3/2;
+  margin: 0 10%;
+  font-size:210%
+}
+.subscribe-content form{
+  grid-area:1/2/3/3;
+  align-self: center;
+}
+footer{
+  height:15em;
+  position: relative;
+}
+.green-initiative-footer-part{
+  top:43%;
+  left:10%;
+  width:20%;
+  font-size:130%;
+  font-weight: bold;
+
+}
+.contact-us{
+  position: absolute;
+  top:40%;
+  right:unset;
+  left:35%;
+  width:15%;
+  font-size:80%;
+}
+.follow-us a{
+  color: #354463;
+}
+.follow-us{
+  
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  top:33%;
+  left:42%;
+  width:30%;
+  font-size:100%;
+  text-align: center;
+  line-height: 1.2em;
+
+}
+.learn-more{
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  top:35%;
+  right:unset;
+  left:65%;
+  width: 30%;
+}
+.learn-more a{
+  color: #354463
+}
+
+.climate-change-tag{
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+  bottom:30%;
+  width:10%;
+  text-align: right;
+  font-family: flood;
+  line-height: 1em;
+  font-size: 2em;
+}
+footer .contact-us hr{
+  width:100%;
+  height: 3px;
+}
+footer .follow-us hr{
+  width:100%;
+  height: 3px;
+}
+footer .learn-more hr{
+  width:100%;
+  height: 3px;
+}
+
 }
